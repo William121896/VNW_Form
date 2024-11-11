@@ -17,14 +17,69 @@
                 <legend>Preencha os campos</legend>
                 <div>
                 <label for="nome">Nome:</label>
-                <input type="text" name="nome" id="nome" placeholder="Escreva o seu nome">
+                <input type="text" name="nome" id="nome" placeholder="Escreva o seu nome"/>
                 </div>
 
                 <div>
                 <label for="email">Nome:</label>
-                <input type="text" name="email" id="nome" placeholder="Escreva o seu e-mail">
+                <input type="text" name="email" id="nome" placeholder="Escreva o seu e-mail"/>
+                </div>
+
+                <div> <!--required pattern="[o-9]{2} [o-9]{5} [o-9]{4}-->
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" name="telefone" id="telefone" placeholder="Escreva o seu telefone"/>
+                </div>
+
+                <div>
+                    <label for="estados">Estado</label>
+                    <select name="" id="">
+                        <option value="AC">AC</option>
+                        <option value="SP">SP</option>
+                        <option value="RJ">RJ</option>
+                    </select>
                 </div>
             </fieldset>
+
+            <fieldset>
+                <legend>Informações</legend>
+                <label for="site">Site</label>
+                <input type="url" name="site" id="site"/>
+
+                <label for="senha">Senha</label>
+                <input type="senha" name="senha" id="senha" placeholder="Digite a sua senha"/>
+
+                <label for="nascimento">Data de nascimento</label>
+                <input type="date" name="nascimento" id="nascimento"/>
+            </fieldset>
+
+            <fieldset>
+                <input type="checkbox" name="autorizacao" checked/>                
+                <label for="autorizacao">Concordo com os termos de uso.</label>                
+
+                <label for="documento">Documento PDF</label>
+                <input type="file" name="documento" id="documento"/>             
+            </fieldset>
+
+            <fieldset>
+                <img src="./VNW.jpg" alt="Vai na Web"/>
+
+                <input type="radio" name="robo" id="sourobo"/>                
+                <label for="sim">Sou um robô.</label>                
+
+                <input type="radio" name="robo" id="naosourobo"/>                
+                <label for="nao">Não sou um robô.</label>
+
+                <input type="radio" name="robo" id="talvezeuseja"/>                
+                <label for="talvez">Talvez eu seja um robô.</label>
+            </fieldset>
+
+            <!--Envio limitado-->
+            <input type="submit" value="Enviar"/>
+            
+            <!--Envio mais versátil-->
+            <button type="submit"> Enviar </button>
+            <button type="reset"> Resetar </button>
+            <button type="padrao"> Padrao </button>
         </form>
     </main>
 </body>
